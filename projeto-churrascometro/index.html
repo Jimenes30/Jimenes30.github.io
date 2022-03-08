@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Churrascômetro</title>
+        <meta name="description" content="Descrição da página.">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="icon" href="https://img.icons8.com/color/50/000000/weber.png" type="image/png">
+
+    </head>
+    <body>
+        <div id="imagem"></div>
+        <div class="container-principal">
+            <h1 class="titulo">Churrascômetro</h1>
+
+            <input id="adultos" class="entrada" type="number" placeholder="Adultos">
+            <input id="criancas" class="entrada" type="number" placeholder="Crianças">
+            <input id="duracao" class="entrada" type="number" placeholder="Duração">
+            <button id="botao-calcular" class="botao-calcular" type="button" onclick="calcular()">Calcular</button>
+
+            <div id="resultados" style="display: none;">
+                <li id="resultCarne" class="resultList"></li>
+                <li id="resultCerveja" class="resultList"></li>
+                <li id="resultBebidas" class="resultList"></li>
+            </div>
+
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
